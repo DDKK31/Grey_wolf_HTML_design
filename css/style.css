@@ -12,6 +12,7 @@ body{
 }
 
 .headder-text{
+    color: black;
     display: flex;
     justify-content: left;
 }
@@ -34,4 +35,13 @@ h1, p{
     padding: 10px 20px;
     display: flex;
     justify-content: center;
+}
+
+footer{
+    background-color:  #EFAD15;
+    color: #444549; 
+    font-size: 2rem;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
