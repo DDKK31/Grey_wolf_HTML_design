@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box; 
+}
+
+
+body{
+    background-color: lightcoral;
+}
+img {
+    max-width: 100%; 
+    border: 2px solid black;
+    padding: 20px;
+    background-color: aqua;
+}
