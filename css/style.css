@@ -1,14 +1,37 @@
-*{
-    box-sizing: border-box; 
+* {
+    box-sizing: border-box;
 }
-
-
 body{
-    background-color: lightcoral;
+    margin: 0;  background-color: #1B1D1F;
 }
-img {
-    max-width: 100%; 
-    border: 2px solid black;
-    padding: 20px;
-    background-color: aqua;
+.gallery{
+    max-width: 100%;
+    padding: 10% 20%;
+    display:flex 
+    justify-content: center; 
+}
+
+.headder-text{
+    display: flex;
+    justify-content: left;
+}
+.logo{
+    max-width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Header */
+header{
+    background-color:  #EFAD15;
+    color: #444549; 
+    font-size: .8 rem;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+h1, p{
+    color: aliceblue;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
 }
