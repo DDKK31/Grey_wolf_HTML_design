@@ -11,13 +11,9 @@ body{
     justify-content: center; 
 }
 
-.headder-text{
-    color: black;
-    display: flex;
-    justify-content: left;
-}
+
 .logo{
-    max-width: 20%;
+    max-width: 40%;
     display: flex;
     justify-content: space-between;
 }
@@ -25,16 +21,49 @@ body{
 header{
     background-color:  #EFAD15;
     color: #444549; 
-    font-size: .8 rem;
+    font-size: 3rem;
     padding: 10px;
     display: flex;
     justify-content: space-between;
 }
-h1, p{
+p{
     color: aliceblue;
-    padding: 10px 20px;
+    padding: 0px 20px;
+}
+/* hvis vi vil have text centreret */
+main{
+    text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+h1{
+    color:aliceblue;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    /*RedGreenBlueAlpha(255, 0,0, 0.5); transperant*/
+}
+
+.italic1{
+    text-align: center;
+    font-style: italic;
+}
+
+.italic{
+    text-align: center;
+    font-style: italic;
+}
+span{
+    color: #EFAD15;
+}
+
+.gallery img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
 }
 
 footer{
@@ -42,6 +71,5 @@ footer{
     color: #444549; 
     font-size: 2rem;
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
