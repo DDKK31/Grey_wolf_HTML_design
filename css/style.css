@@ -17,10 +17,8 @@ body{
 }
 /* Header */
 header{
-    background-color:  #EFAD15;
     color: #444549; 
     font-size: 3rem;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -32,7 +30,7 @@ main{
     align-items: center;
 
 }
-p {
+h1, p {
     color: aliceblue;
     padding: 0px 20px;
 }
@@ -40,13 +38,32 @@ p {
 /*index.html*/
 
 .hero {
-    background-image: url(../img/background.webp); /*url(../img/) så kommer vi ud af CSS mappen og finder vores billed */
+    background: url(../img/mD5dwdL8.mp4); /*url(../img/) så kommer vi ud af CSS mappen og finder vores billed */
     background-size: cover;
     min-height: 90vh; /*vh=viewheight det betyder altså den cutter af og transformere billedet om*/
+    width: 100%;
     display: flex; /* giver mulighed for at rykke rundt på teksten og knapper rundt på baggrundsbilledet */ 
     flex-direction: column;
     align-items: flex-start;
     justify-content: end;
+}
+.bakcgroundvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .bakcgroundvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .bakcgroundvideo{
+        width: auto;
+        height: 100%;
+    }
 }
 .cta {
     background-color: #EFAD15;
@@ -54,6 +71,9 @@ p {
     padding: 10px;
     border-radius: 10px;/*øverst højre, øverst venstre, nederest højre og nederest venstre*/
     text-decoration: none;
+}
+.cta:hover {
+    background-color: black;
 }
 main > h1 {
     color:aliceblue;
