@@ -38,6 +38,23 @@ p {
 }
 
 /*index.html*/
+
+.hero {
+    background-image: url(../img/background.webp); /*url(../img/) så kommer vi ud af CSS mappen og finder vores billed */
+    background-size: cover;
+    min-height: 90vh; /*vh=viewheight det betyder altså den cutter af og transformere billedet om*/
+    display: flex; /* giver mulighed for at rykke rundt på teksten og knapper rundt på baggrundsbilledet */ 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+.cta {
+    background-color: #EFAD15;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;/*øverst højre, øverst venstre, nederest højre og nederest venstre*/
+    text-decoration: none;
+}
 main > h1 {
     color:aliceblue;
     border-bottom: 2px solid black;
